@@ -35,9 +35,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTO-Um-hIh" customClass="Border_Button" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="758" width="361" height="40"/>
+                                <rect key="frame" x="16" y="748" width="361" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Va3-VG-gF7"/>
+                                    <constraint firstAttribute="height" constant="50" id="Va3-VG-gF7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Started">
@@ -47,6 +47,9 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JDR-TJ-U8J" kind="show" id="SAF-W8-7zy"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Id-La-wDw">
                                 <rect key="frame" x="137" y="77" width="119" height="20"/>
@@ -96,11 +99,11 @@
             <objects>
                 <viewController id="JDR-TJ-U8J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kkh-YV-hdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="ta3-2w-Sfg">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="LsV-J3-8rg">
                                 <rect key="frame" x="0.0" y="77" width="393" height="82.333333333333314"/>
@@ -116,8 +119,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-8a-yn7" customClass="Border_Button" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="748" width="361" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-8a-yn7" customClass="Border_Button" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="713" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="zno-Ic-cPp"/>
                                 </constraints>
@@ -129,6 +132,9 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ett-JZ-gzF" kind="show" id="Yms-Kf-fdA"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9La-R9-wvH" userLabel="ButtonStackView">
                                 <rect key="frame" x="16" y="194.33333333333337" width="361" height="160"/>
@@ -182,8 +188,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9La-R9-wvH" firstAttribute="top" secondItem="LsV-J3-8rg" secondAttribute="bottom" constant="35" id="2Tc-Lc-xQg"/>
+                            <constraint firstItem="2Mn-8a-yn7" firstAttribute="leading" secondItem="rMU-7p-hct" secondAttribute="leading" constant="16" id="3an-S9-eZR"/>
                             <constraint firstItem="ta3-2w-Sfg" firstAttribute="trailing" secondItem="rMU-7p-hct" secondAttribute="trailing" id="DvG-WB-NHa"/>
                             <constraint firstItem="9La-R9-wvH" firstAttribute="leading" secondItem="rMU-7p-hct" secondAttribute="leading" constant="16" id="FV3-AL-thO"/>
+                            <constraint firstItem="rMU-7p-hct" firstAttribute="trailing" secondItem="2Mn-8a-yn7" secondAttribute="trailing" constant="16" id="G4s-Ea-7HP"/>
                             <constraint firstItem="LsV-J3-8rg" firstAttribute="leading" secondItem="rMU-7p-hct" secondAttribute="leading" id="RLU-wU-78E"/>
                             <constraint firstItem="rMU-7p-hct" firstAttribute="trailing" secondItem="LsV-J3-8rg" secondAttribute="trailing" id="Sk6-G4-ASC"/>
                             <constraint firstItem="ta3-2w-Sfg" firstAttribute="leading" secondItem="rMU-7p-hct" secondAttribute="leading" id="YXr-he-Dbj"/>
@@ -194,6 +202,7 @@
                             <constraint firstItem="rMU-7p-hct" firstAttribute="bottom" secondItem="2Mn-8a-yn7" secondAttribute="bottom" constant="20" id="z9E-ye-rrV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lRv-hJ-H6H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9B-jH-6PF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,11 +213,11 @@
             <objects>
                 <viewController id="ett-JZ-gzF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKa-cb-m9F">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="hcF-Cr-l2q">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8zN-WT-hcX">
                                 <rect key="frame" x="0.0" y="77" width="393" height="82.333333333333314"/>
@@ -258,7 +267,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-xU-0Qs" customClass="Border_Button" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="748" width="361" height="50"/>
+                                <rect key="frame" x="16" y="713" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Tjk-NN-55K"/>
                                 </constraints>
@@ -288,6 +297,7 @@
                             <constraint firstItem="JdY-Bt-YP9" firstAttribute="leading" secondItem="fHB-nn-McL" secondAttribute="leading" constant="16" id="gxf-ep-amF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RkY-7C-2ed"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YtE-D6-PhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
